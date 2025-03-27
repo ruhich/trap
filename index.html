@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ВОДНПТ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logogmt.jpeg" alt="Логотип учебного заведения">
+        <h1>ВОДНПТ</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Факультеты</a></li>
+          <li><a href="#">Поступление</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Добро пожаловать!</h2>
+      <p>Лучшее место для получения качественного образования.</p>
+      <a href="#" class="btn" id="playButton">НАЖМИ ЕСЛИ АРСАГ ГЕЙ</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h3>О нашем учебном заведении</h3>
+      <p>Очень любим учится, особенно Арсаг хуеплет.</p>
+    </div>
+  </section>
+
+  <section class="faculties">
+    <div class="container">
+      <h3>Наши факультеты</h3>
+      <div class="faculty-grid">
+        <div class="faculty">
+          <img src="images/mchs.jpg" alt="Факультет 1">
+          <h4>МЧС</h4>
+          <p>Спасают</p>
+        </div>
+        <div class="faculty">
+          <img src="images/turizm.jpeg" alt="Факультет 2">
+          <h4>Туризм</h4>
+          <p>Гуляют</p>
+        </div>
+        <div class="faculty">
+          <img src="images/it.webp" alt="Факультет 3">
+          <h4>Программирование</h4>
+          <p>Программируют</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 ВОДНПТ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <audio id="myAudio" src="music/sound_70957.mp3" preload="auto"></audio>
+  
+  <script>
+    const playButton = document.getElementById("playButton");
+    const myAudio = document.getElementById("myAudio");
+
+    playButton.addEventListener("click", function (event) {
+      event.preventDefault(); 
+
+      
+      if (myAudio.play) {
+        if (myAudio.paused) {
+          myAudio.play();
+          playButton.textContent = "Пауза";
+        } else {
+          myAudio.pause();
+          playButton.textContent = "Узнать больше"; 
+        }
+      } else {
+        console.error("Ваш браузер не поддерживает воспроизведение аудио.");
+      }
+    });
+
+    myAudio.addEventListener('ended', function () {
+      playButton.textContent = "Узнать больше"; 
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header .logo h1 {
+  display: inline;
+  font-size: 24px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero {
+  background: url('images/3gmt.jpg') no-repeat center center/cover;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+    font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 5px #fff;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.faculties {
+  padding: 50px 0;
+}
+
+.faculties h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.faculty {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.faculty img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.faculty h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header .logo,
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+  }
+
+  header nav li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
